@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT PINJAMIN AJA - RESERVASI</title>
+    <style>
+
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; color: #333; }
+        header { text-align: center; padding: 50px 0 20px; width: 100%; background-color: #ffffff; border-bottom: 1px solid #e9ecef; }
+        .logo-box { width: 100px; height: 100px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 3px solid #fce4ec; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .logo-box img { width: 100%; height: 100%; object-fit: cover; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 3px; text-transform: uppercase; font-weight: 300; }
+        header p { margin: 5px 0 0; font-size: 13px; color: #777; letter-spacing: 1px; }
+        nav { margin: 25px 0 40px; }
+        nav a { text-decoration: none; color: #555; font-weight: 600; margin: 0 15px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover, .active { color: #f06292; }
+
+
+        article {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 20px;
+            padding: 40px 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #e9ecef;
+            margin-bottom: 50px;
+        }
+
+        h2 { text-align: center; font-weight: 400; color: #f06292; margin-bottom: 35px; letter-spacing: 1px; text-transform: uppercase; font-size: 20px; }
+
+        .form-row { margin-bottom: 18px; text-align: left; }
+        label { display: block; font-size: 11px; font-weight: bold; color: #999; margin-bottom: 6px; letter-spacing: 1px; text-transform: uppercase; }
+        
+        input[type="text"], input[type="tel"], input[type="date"], textarea, select { 
+            width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 10px; 
+            font-size: 14px; background: #fdfdfd; color: #333; box-sizing: border-box; 
+        }
+        
+        input:focus, textarea:focus { border-color: #ffb6c1; outline: none; background: #fff; }
+
+        .radio-group { display: flex; gap: 20px; font-size: 14px; color: #666; padding: 5px 0; }
+        .radio-group input { width: auto; margin-right: 5px; }
+
+        .btn-elegant { 
+            background: linear-gradient(135deg, #f8bbd0 0%, #f06292 100%);
+            color: white; border: none; padding: 15px; width: 100%; border-radius: 20px; 
+            font-weight: bold; font-size: 14px; letter-spacing: 1px; cursor: pointer; margin-top: 25px; 
+            text-transform: uppercase; box-shadow: 0 5px 15px rgba(240, 98, 146, 0.2); 
+        }
+        .btn-elegant:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(240, 98, 146, 0.3); }
+
+        footer { margin-top: auto; padding: 40px 0; font-size: 11px; color: #999; font-weight: bold; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-box"><img src="foto.jpg" alt="Logo"></div>
+        <h1>PT PINJAMIN AJA</h1>
+        <p>Solusi Sewa Kendaraan Terpercaya</p>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="hal1.html">LIST KENDARAAN</a>
+        <a href="hal2.html" class="active">PEMESANAN</a>
+    </nav>
+    <article>
+        <h2>FORM RESERVASI</h2>
+        <form>
+            <div class="form-row"><label>NAMA PEMESAN</label><input type="text" required></div>
+            <div class="form-row"><label>ALAMAT PENGIRIMAN</label><textarea rows="2" required></textarea></div>
+            <div class="form-row"><label>NOMOR TELEPON</label><input type="tel" required></div>
+            <div class="form-row"><label>TANGGAL SEWA</label><input type="date" required></div>
+            <div class="form-row"><label>TANGGAL PENGEMBALIAN</label><input type="date" required></div>
+            <div class="form-row">
+                <label>JENIS KENDARAAN</label>
+                <div class="radio-group">
+                    <span><input type="radio" name="j" required> Mobil</span>
+                    <span><input type="radio" name="j" required> Motor</span>
+                </div>
+            </div>
+            <div class="form-row"><label>MODEL KENDARAAN</label><input type="text" required></div>
+            <div class="form-row"><label>NOMOR PLAT (OPSIONAL)</label><input type="text"></div>
+            <div class="form-row">
+                <label>ASURANSI TAMBAHAN</label>
+                <div class="radio-group">
+                    <span><input type="radio" name="a" required> Ya</span>
+                    <span><input type="radio" name="a" required> Tidak</span>
+                </div>
+            </div>
+            <div class="form-row"><label>CATATAN KHUSUS</label><textarea rows="2"></textarea></div>
+            <button type="submit" class="btn-elegant">CONFIRM BOOKING</button>
+        </form>
+    </article>
+    <footer>CREATED BY ZAHARA - 202432058</footer>
+</body>
+</html>
